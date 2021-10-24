@@ -1,0 +1,65 @@
+Bigbasket Application(MERN Stack / FullStack)
+-----------------------------
+server Configuration(Express,MongoDB)
+------------------------------
+modules->Express,cors,dotenv,mongoose
+
+npm install express cors dotenv mongoose
+
+REST API Configuration
+-------------------------
+1) Get all the products
+    URL:http://127.0.0.1:5000/api/products
+	REQUEST : GET
+	METHOD : router.get()
+	fields:no-fields
+
+2) Get  a single  product
+    URL:http://127.0.0.1:5000/api/products/:id
+	REQUEST : GET
+	METHOD : router.get()
+	fields:no-fields
+
+3) Create a  product
+    URL:http://127.0.0.1:5000/api/products
+	REQUEST :POST
+	METHOD : router.post()
+	fields:name,image,price,quantity,info
+
+4) Uadate  a single  product
+    URL:http://127.0.0.1:5000/api/products/:id
+	REQUEST : PUT
+	METHOD : router.PUT()
+	fields:name,image,price,quantity,info
+
+
+4) Delete a   product
+    URL:http://127.0.0.1:5000/api/products/:id
+	REQUEST : Delete
+	METHOD : router.Delete()
+	fields:no-fields
+
+MongoDB Configration
+-----------------------
+database:bigbasket-react
+table:products
+fields:name:string,
+      image:string,
+	  price:number,
+	  quantity:number,
+	  info:string,
+	  created:data(auto)
+
+==============================
+insertOne()=->save()
+updateOne()=>findByIdAndUpdate()
+find()->find(),findOne({name:' '}),findById()
+deleteOne()=>findByIdAndDelete()
+
+
+
+
+
+
+
+

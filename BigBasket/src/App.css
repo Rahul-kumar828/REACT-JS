@@ -1,0 +1,10 @@
+.landing-page{
+  background: white url("./assets/img/bg-grocery.jpg") scroll center;
+    background-size: cover;
+    height: 100vh;
+    color: lightcyan;
+}
+.wrapper{
+    background-color: rgba(0,0,0,0.7);
+    height: 100%;
+}
